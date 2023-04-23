@@ -1,5 +1,8 @@
 # Reggie
 
+![Crates.io](https://img.shields.io/crates/v/reggie?style=flat-square)
+![Crates.io](https://img.shields.io/crates/l/reggie?style=flat-square)
+
 ## Synopsis
 
 `reggie` is a fast registry searcher for Windows.
