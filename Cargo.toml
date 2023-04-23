@@ -6,7 +6,7 @@ license = "GPLv3"
 description = "fast Windows registry search tool"
 homepage = "https://github.com/itchychips/reggie"
 repository = "https://github.com/itchychips/reggie"
-readme = "https://github.com/itchychips/reggie/README.md"
+readme = "README.md"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
