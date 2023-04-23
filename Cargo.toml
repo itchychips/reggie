@@ -2,7 +2,7 @@
 name = "reggie"
 version = "0.1.0"
 edition = "2021"
-license = "GPLv3"
+license = "GPL-3.0-or-later"
 description = "fast Windows registry search tool"
 homepage = "https://github.com/itchychips/reggie"
 repository = "https://github.com/itchychips/reggie"
