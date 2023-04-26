@@ -27,6 +27,9 @@ use regex::Regex;
 
 pub mod winreg_provider;
 pub mod winreg_provider2;
+pub mod winreg_provider3;
+pub mod winreg_provider4;
+pub mod winreg_provider5;
 
 #[derive(Parser)]
 struct Config {
@@ -182,6 +185,30 @@ fn main() -> Result<(), Box<dyn Error>> {
                 .build_global().expect("issue with thread count argument");
         }
         winreg_provider2::get_all(hive)
+    }
+    else if backend == "v3" {
+        if thread_count != 0 {
+            ThreadPoolBuilder::new()
+                .num_threads(thread_count)
+                .build_global().expect("issue with thread count argument");
+        }
+        winreg_provider3::get_all(hive)
+    }
+    else if backend == "v4" {
+        if thread_count != 0 {
+            ThreadPoolBuilder::new()
+                .num_threads(thread_count)
+                .build_global().expect("issue with thread count argument");
+        }
+        winreg_provider4::get_all(hive)
+    }
+    else if backend == "v5" {
+        if thread_count != 0 {
+            ThreadPoolBuilder::new()
+                .num_threads(thread_count)
+                .build_global().expect("issue with thread count argument");
+        }
+        winreg_provider5::get_all(hive)
     }
     else {
         eprintln!("unknown backend: {}", backend);

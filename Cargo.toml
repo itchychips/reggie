@@ -17,3 +17,6 @@ clap = { version = "4.2.4", features = ["derive"] }
 regex = "1.8.0"
 indexmap = { version = "1.9.3", features = ["rayon"] }
 rayon = "1.7.0"
+dashmap = "5.4.0"
+crossbeam = "0.8.2"
+string-interner = "0.14.0"
